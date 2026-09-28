@@ -32,7 +32,7 @@ RUN curl -fsSLO https://paperclip.ing/install.sh \
 # Follows the same pattern as other gautada containers.
 # The user name ryan was chosen after Ryan Dahl, the creator of Node.js.
 # as suggested by ChatGPT
-ARG OLDUSER=debian
+ARG OLDUSER=ryan
 ARG USER=clippy
 RUN /usr/sbin/usermod -l $USER $OLDUSER \
  && /usr/sbin/usermod -d /home/$USER -m $USER \
