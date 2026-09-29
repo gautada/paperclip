@@ -20,10 +20,10 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /opt/paperclip
-RUN curl -fsSLO https://paperclip.ing/install.sh \
- && curl -fsSLO https://paperclip.ing/install.sh.sha256 \
- && chmod +x ./install.sh
-
+# RUN curl -fsSLO https://paperclip.ing/install.sh \
+#  && curl -fsSLO https://paperclip.ing/install.sh.sha256 \
+#  && chmod +x ./install.sh
+RUN /usr/bin/npm install --global --ignore-scripts=false paperclipai
 
 # ╭――――――――――――――――――――╮
 # │ USER               │
