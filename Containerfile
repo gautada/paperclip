@@ -8,7 +8,7 @@ LABEL org.opencontainers.image.title="paperclip"
 LABEL org.opencontainers.image.description="paperclip - ai agent coodinator"
 LABEL org.opencontainers.image.url="https://hub.docker.com/r/gautada/paperclip"
 LABEL org.opencontainers.image.source="https://github.com/gautada/paperclip"
-LABEL org.opencontainers.image.license="Liscense"
+LABEL org.opencontainers.image.license="Upstream"
 
 # https://github.com/paperclipai/paperclip#quickstart
 # ╭――――――――――――――――――╮
