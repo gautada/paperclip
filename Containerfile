@@ -39,3 +39,6 @@ RUN /usr/sbin/usermod -l $USER $OLDUSER \
  && /usr/sbin/groupmod -n $USER $OLDUSER \
  && PASSWORD="$(openssl rand -base64 32 | tr -dc 'A-Za-z0-9' | head -c 24)" \
  && printf '%s:%s\n' "$USER" "$PASSWORD" | /usr/sbin/chpasswd
+
+ COPY etc/services.d/paperclip/run /etc/services.d/paperclip/run
+ RUN chmod +x /etc/services.d/paperclip/run
