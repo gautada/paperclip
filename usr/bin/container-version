@@ -1,3 +1,2 @@
 #!/bin/sh
-node -e "console.log(require('paperclipai/package.json').version)" 2>/dev/null \
-  || echo "unknown"
+/usr/bin/paperclipai --version
