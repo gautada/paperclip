@@ -1,4 +1,4 @@
- !/bin/sh
+#!/bin/sh
 exec 2>&1
 
 APP_USER=$(id -nu 1000)
